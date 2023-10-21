@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Ozbargain Hide Expired Deals",
+  "version": "1.0",
+  "description": "This extension automatically hides all expired deals on ozbargain.com.au.",
+  "homepage_url": "https://github.com/ashtonav/ozbargain-hide-expired-deals",
+  "icons": {
+    "128": "icon128.png"
+  },
+  "permissions": ["*://www.ozbargain.com.au/*"],
+  "content_scripts": [
+    {
+      "matches": ["*://www.ozbargain.com.au/*"],
+      "js": ["hideExpired.js"],
+      "css": ["hideExpired.css"]
+    }
+  ]
+}
